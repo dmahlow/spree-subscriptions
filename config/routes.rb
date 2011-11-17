@@ -2,7 +2,7 @@ Rails.application.routes.draw do
  
   scope "/account" do
     resources :subscriptions do
-      put 'cancel'
+      get 'cancel'
       
       resources :creditcards
     end
